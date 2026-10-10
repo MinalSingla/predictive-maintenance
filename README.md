@@ -31,16 +31,17 @@ The dataset is synthetic and is being used for educational and machine learning 
 
 ## Current Progress
 
-- [x] Selected the dataset.
-- [x] Loaded and inspected the CSV using Pandas.
-- [x] Checked data types, missing values, and duplicate records.
-- [x] Explored machine failure distribution.
-- [x] Created a prepared dataset for machine learning.
-- [ ] Train and evaluate the machine learning model.
-- [ ] Develop the backend and database.
-- [ ] Build the frontend dashboard.
+- [x] Selected and prepared the dataset.
+- [x] Analysed machine failure distribution.
+- [x] Trained a Logistic Regression model.
+- [x] Trained and compared a Random Forest model.
+- [x] Evaluated models using precision, recall, F1 and confusion matrix.
+- [x] Saved and loaded the selected model.
+- [x] Predicted failure risk for new machine readings.
+- [ ] Develop backend and database.
+- [ ] Build frontend dashboard.
 - [ ] Integrate Generative AI.
-- [ ] Test and deploy the complete application.
+- [ ] Test and deploy the application.
 
 ## Project Status
 
