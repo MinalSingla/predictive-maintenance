@@ -92,3 +92,29 @@ print(prepared_df.columns.tolist())
 prepared_df.to_csv("data/prepared_data.csv", index=False)
 
 print("\nPrepared dataset saved successfully.")
+
+print("\n--- Final Dataset Validation ---")
+
+prepared_df = pd.read_csv("data/prepared_data.csv")
+
+print("Shape:", prepared_df.shape)
+
+print("Missing values:")
+print(prepared_df.isnull().sum())
+
+print("Duplicate rows:", prepared_df.duplicated().sum())
+
+print("Target distribution:")
+print(prepared_df["machine_failure"].value_counts())
+
+print("Unique target values:")
+print(prepared_df["machine_failure"].unique())
+
+print("Data types:")
+print(prepared_df.dtypes)
+
+assert prepared_df.shape == (10000, 7)
+assert prepared_df.isnull().sum().sum() == 0
+assert set(prepared_df["machine_failure"].unique()) == {0, 1}
+
+print("\nDataset validation passed!")
